@@ -1,0 +1,44 @@
+.nav {
+    display: flex;
+    background-color: var(--color-surface);
+    height: var(--nav-height);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+
+    padding-left: var(--space-4); /* 8px less to account for the padding for individual links */
+    padding-right: var(--space-4) /* 8px less to account for the padding for individual links */
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    max-width: var(--max-width);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+nav ul li {
+    margin: var(--space-2);
+}
+
+.logo {
+    margin-right: auto;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+}

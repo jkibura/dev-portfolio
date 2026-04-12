@@ -1,0 +1,153 @@
+:root {
+  --color-bg:           #0A0A0F;   /* Page background — near-black with blue undertone */
+  --color-surface:      #111118;   /* Cards, nav */
+  --color-surface-2:    #1A1A24;   /* Elevated cards, hover states */
+  --color-border:       #2A2A38;   /* Subtle dividers */
+  --color-border-glow:  rgba(124, 111, 255, 0.25); /* Accent border on hover */
+
+  --color-text-primary:   #EAEAF5; /* Headlines, labels */
+  --color-text-secondary: #8888A8; /* Body copy, captions */
+  --color-text-muted:     #55556A; /* Placeholders, disabled */
+
+  --color-accent:       #7C6FFF;   /* Primary CTA, links, highlights */
+  --color-accent-dim:   #5B4FE8;   /* Pressed/darker accent */
+  --color-accent-glow:  rgba(124, 111, 255, 0.15); /* Soft glow bg */
+  --color-teal:         #00D9A5;   /* Secondary accent, "available" dot */
+}
+
+:root {
+  /* Spacing scale */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* Layout */
+  --max-width:         1100px;
+  --max-width-text:    680px;   /* prose columns */
+  --section-padding-y: clamp(5rem, 10vw, 8rem);
+
+  /* Component sizing */
+  --nav-height:        68px;
+  --border-radius-sm:  6px;
+  --border-radius-md:  10px;
+  --border-radius-lg:  16px;
+  --border-radius-xl:  24px;
+}
+
+  /* Font stacks */
+:root {
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+.hero-name {
+    font: 700 clamp(2.8rem, 6vw, 5rem) var(--font-heading); /* 800 */
+    color: var(--color-text-primary);
+}
+
+.hero-name-accent {
+    font: 700 clamp(2.8rem, 6vw, 5rem) var(--font-heading); /* 800 */
+    color: var(--color-accent);
+}
+
+.hero-subtitle {
+    font: 600 clamp(1.1rem, 2.5vw, 1.5rem) var(--font-heading); /* 700 */
+    color: var(--color-text-secondary);
+    margin-top: var(--space-6);
+}
+
+.section-title {
+    font: 600 clamp(1.6rem, 3vw, 2.25rem) var(--font-heading);
+    color: var(--color-text-primary);
+}
+
+.card-title {
+    font: 600 1.1rem var(--font-heading);
+    color: var(--color-text-primary);
+}
+
+.nav-link {
+    font: 500 0.875rem var(--font-body);
+    color: var(--color-text-secondary)
+}
+
+.body-text {
+    font: 400 1rem/1.75 var(--font-body);
+    color: var(--color-text-secondary);
+}
+
+.caption {
+    font: 500 0.8125rem/1.5 var(--font-body);
+    color: var(--color-text-muted);
+}
+
+.accent {
+    font: 500 0.8125rem/1.5 var(--font-body);
+    color: var(--color-accent);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%; /**/
+    width:100%;
+    max-width: var(--max-width);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+p {
+    color: var(--color-text-secondary)
+}
+
+.accent {
+    color: var(--color-accent);
+}
+
+.button {
+    font: 600 clamp(1.1rem, 2.5vw, 1.5rem) var(--font-heading);
+    color: var(--color-text-primary);
+    
+    flex: 0 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+    border: 1px solid var(--color-text-primary);
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--color-text-muted);
+}
+
+section {
+
+    padding-bottom: var(--section-padding-y);
+}
