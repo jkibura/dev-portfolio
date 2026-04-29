@@ -1,8 +1,10 @@
 import React from 'react'
 import '../styles/globals.css'
 import styles from '../styles/Projects.module.css'
+import projects from '../data/projects'
 
 import SectionHeader from './ui/SectionHeader'
+import ProjectCard from './ui/ProjectCard'
 
 const Projects = () => {
 const accent = 'MY WORK'
@@ -13,9 +15,19 @@ const title = 'Featured Projects'
       <SectionHeader accent={accent} title={title}/>
       <p className='body-text'>A selection of things I've built</p>
 
-      <div >
-        <div className={styles.projects}></div>
+      <div className={styles.projects}>
+        {projects.map((project) => (
+          <ProjectCard 
+            key={project.id}
+            image={project.image}
+            title={project.name}
+            description={project.description}
+            tags={project.tags}
+            link={project.link}
+            />
+        ))}
       </div>
+      
     </section>
   )
 }

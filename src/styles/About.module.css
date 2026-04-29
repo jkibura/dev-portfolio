@@ -1,0 +1,41 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-8);
+    align-items: start;
+}
+
+.avatarWrapper{
+    position: relative;
+}
+
+.avatar {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--space-4);
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.avatarGlow {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--space-4);
+    background-color: var(--color-accent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+    z-index: 0;
+    transform: translate(8px, 8px);
+    filter: blur(24px);
+}
+
+.avatarWrapper:hover .avatarGlow {
+    opacity: 0.25;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+}

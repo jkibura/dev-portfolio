@@ -32,7 +32,7 @@ const Hero = () => {
 
         <div className={styles.stats}>
           <div className={styles.stat}>
-            <h3 className={styles.statNo}>3+</h3>
+            <h3 className={styles.statNo}>2+</h3>
             <p className={styles.statText}>Years of experience</p>
           </div>
 

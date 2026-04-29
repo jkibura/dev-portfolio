@@ -63,10 +63,22 @@
     margin-top: var(--space-6);
 }
 
+/* .sectionHeader {
+
+}
+
+.eyebrow {
+
+} */
+
 .section-title {
     font: 600 clamp(1.6rem, 3vw, 2.25rem) var(--font-heading);
     color: var(--color-text-primary);
 }
+
+/* .header-underline {
+
+} */
 
 .card-title {
     font: 600 1.1rem var(--font-heading);
@@ -88,11 +100,11 @@
     color: var(--color-text-muted);
 }
 
+/* I deleted this for the 'eyebrow' style up there */
 .accent {
     font: 500 0.8125rem/1.5 var(--font-body);
     color: var(--color-accent);
-}
-
+} 
 
 *{
     box-sizing: border-box;
@@ -102,6 +114,7 @@
 
 body {
     background-color: var(--color-bg);
+    font: var(--font-body);
 }
 
 .container {
@@ -110,12 +123,9 @@ body {
     height: 100%; /**/
     width:100%;
     max-width: var(--max-width);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding: var(--section-padding-y) var(--space-5);
     display: flex;
     flex-direction: column;
-
-    
 }
 
 
@@ -147,7 +157,58 @@ p {
     background-color: var(--color-text-muted);
 }
 
-section {
+.tag {
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    padding-bottom: var(--section-padding-y);
+    /* padding: var(--space-2) var(--space-3);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--color-border);
+    font: 500 0.8125rem/1.5 var(--font-body); */
+}
+
+.scroll {
+    position: fixed;
+    bottom: 44px;
+    right: 44px;
+    height: 44px;
+    width: 44px;
+    border-radius: 20px;
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity 250ms ease,
+                transform 250ms ease;
+                background: 200ms ease;
+                border-color: 200ms ease;
+
+}
+
+.scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;;
+}
+
+.scroll:hover {
+    background-color: var(--color-accent);
+    /* color: var(--color-surface); */
+    border-color: var(--color-accent);
+}
+
+.scroll:active {
+    transform: scale(0.94);
 }
