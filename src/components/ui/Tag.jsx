@@ -6,9 +6,9 @@ import '../../styles/globals.css'
 const Tag = ( {label} ) => {
   return (
     <div className="tag">
-        <div>
-          
-        </div>
+        {/* <div>
+          <img src="" alt={label} />
+        </div> */}
         <span>{label}</span>
     </div>
   )

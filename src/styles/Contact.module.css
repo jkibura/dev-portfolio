@@ -126,3 +126,15 @@ input:focus, textarea:focus {
     font-weight: 500;
     color: var(--color-text-primary);
 }
+
+@media (max-width: 1024px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        margin: 0 auto;
+        max-width: 768px;
+    }
+    
+}

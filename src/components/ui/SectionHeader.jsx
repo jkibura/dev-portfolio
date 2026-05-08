@@ -4,9 +4,9 @@ import '../../styles/globals.css'
 const SectionHeader = (props) => {
   return (
     <div className='sectionHeader'>
-        <span className='eyebrow'>{props.accent}</span>
-        <h3 className='section-title'>{props.title}</h3>
-        <span className='header-underline'></span>
+        <p className='eyebrow'>{props.accent}</p>
+        <h2 className='section-title'>{props.title}</h2>
+        <div className='accentLine' />
     </div>
   )
 }

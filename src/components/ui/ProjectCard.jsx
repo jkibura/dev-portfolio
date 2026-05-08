@@ -7,21 +7,23 @@ const ProjectCard = ({ image, title, description, tags, link}) => {
        target='_blank'
        rel='noopener noreferrer'>
       <div className={styles.card}>
-        <div className={styles.imageHolder}>
+        <div className={styles.imageWrapper}>
           <img className={styles.image}src={image} alt={name} />
         </div>
 
-        <h4 className={styles.cardTitle}>
-          {title}
-        </h4>
-        <p className={styles.cardDescription} id='body-text'>
-          {description}
-        </p>
+        <div className={styles.body}>
+          <h3 className={styles.title}>
+            {title}
+          </h3>
+          <p className={styles.description} id='body-text'>
+            {description}
+          </p>
 
-        <div className={styles.cardTags}>
-          {tags.map((tag) => (
-            <span className={styles.tag}>{tag}</span>
-          ))}
+          <div className={styles.tags}>
+            {tags.map((tag) => (
+              <span className={styles.tag}>{tag}</span>
+            ))}
+          </div>
         </div>
 
       </div>

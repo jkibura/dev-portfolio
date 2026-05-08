@@ -92,7 +92,7 @@ function handleSubmit(e) {
 
           <div className={styles.socials}>
             <a 
-              href=""
+              href="https://github.com/jkibura"
               target='_blank'
               rel='noopener noreferrer'
               className={styles.socialRow}
@@ -122,7 +122,7 @@ function handleSubmit(e) {
             </a>
 
             <a 
-              href=""
+              href="mailto:jkibura001@gmail.com"
               target='_blank'
               rel='noopener noreferrer'
               className={styles.socialRow}
@@ -132,7 +132,7 @@ function handleSubmit(e) {
               </div>
               <div className={styles.socialText}>
                 <span className={styles.socialLabel}>Email</span>
-                <span className={styles.socialLink}>jjskb001@gmail.com</span>
+                <span className={styles.socialLink}>jkibura001@gmail.com</span>
               </div>
             </a>
           </div>

@@ -18,11 +18,23 @@ const About = () => {
           <img className={styles.avatar} src={profileImage} alt="my photo" />
           <div className={styles.avatarGlow}></div>
         </div>
-        <div>
-          <p className="body-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nesciunt repellendus ea ullam corrupti. Numquam tempora magnam eos dolores ad tempore doloremque porro sapiente, voluptatum saepe molestiae quasi consequuntur ex!
-          </p>
+          
+        <div className={styles.content}>
+          <p className={styles.bio}>
+              I'm a software engineer with a love for clean architecture and
+              thoughtful UI. After years building enterprise systems, I returned
+              to hands-on coding to sharpen my craft — one project at a time.
+              I care about the intersection of engineering rigour and beautiful
+              user experience.
+            </p>
+
+            <p className={styles.bio}>
+              When I'm not writing code, I'm reading about systems design,
+              contributing to open source, or mentoring junior developers in
+              my community.
+            </p>
         </div>
+        
       </div>
 
     </section>
