@@ -10,9 +10,9 @@ import ScrollToTop from './components/ui/ScrollToTop.jsx'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <main>
+      
         <Hero />
         <About />
         <Skills />
@@ -20,8 +20,8 @@ const App = () => {
         <Contact />
         <Footer />
         <ScrollToTop />
-      </main>
-    </div>
+      
+    </>
   )
 }
 

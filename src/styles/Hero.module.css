@@ -19,6 +19,20 @@
     margin-bottom: auto;
 }
 
+@media (max-width: 768px) {
+    .heroText h1, span, p {
+        justify-content: center;
+
+    }
+    /* .textMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    } */
+}
+
 .buttons {
     display: flex;
     margin-top: var(--space-8);

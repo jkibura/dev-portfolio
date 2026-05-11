@@ -49,15 +49,25 @@
     .about {
         grid-template-columns: 1fr;
         gap: var(--space-8);
+        align-items: center;
+        justify-items: center;
+        
     }
     .avatar {
-        max-width: 220px;
+        max-width: 330px;
         margin: 0 auto;
+    }
+    .avatarGlow {
+        max-width: 330px;
+        transform: translate(2px, 2px);
     }
 }
 
 .skills {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     flex-wrap: wrap;
     gap: var(--space-4);
 }

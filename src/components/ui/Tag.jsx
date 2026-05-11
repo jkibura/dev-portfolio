@@ -3,12 +3,11 @@ import '../../styles/globals.css'
 
 
 
-const Tag = ( {label} ) => {
+const Tag = ( {label, icon, size, color} ) => {
+  const Icon = icon
   return (
     <div className="tag">
-        {/* <div>
-          <img src="" alt={label} />
-        </div> */}
+        <Icon size={size} color={color}/>
         <span>{label}</span>
     </div>
   )

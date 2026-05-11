@@ -20,7 +20,7 @@ const title = 'Featured Projects'
           <ProjectCard 
             key={project.id}
             image={project.image}
-            title={project.name}
+            name={project.name}
             description={project.description}
             tags={project.tags}
             link={project.link}

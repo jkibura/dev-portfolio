@@ -4,9 +4,11 @@ import styles from '../styles/Footer.module.css'
 
 
 const Footer = () => {
+  const year = new Date().getDate
+
   return (
     <div className={styles.footer}>
-        <p className='body-text'>&copy; Jesse 2026. Designed and built with care.</p>
+        <p className='body-text'>&copy; {year} All rights reserved. Designed and built with care.</p>
     </div>
   )
 }

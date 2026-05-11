@@ -21,10 +21,10 @@
 }
 
 .image-Wrapper {
-    width: 100;
+    width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    background: #1A1A24;
+    background: var(--color-surface-2);
     border-bottom: 1px solid #2A2A38;
 }
 
@@ -38,3 +38,16 @@
 .card:hover .image {
     transform: scale(1.1);
 }
+
+.body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--space-4);
+}
+
+.description {
+    flex: 1;
+}
+

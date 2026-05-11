@@ -11,7 +11,7 @@ const Hero = () => {
       <div className='container' id={styles.heroContainer}>
 
         <div className={styles.heroText}>
-          <div>
+          <div className={styles.textMobile}>
             <h1 className='hero-name'>I build high-performance</h1>
             <span className='hero-name-accent'>web experiences</span>
           </div>

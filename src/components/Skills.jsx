@@ -15,6 +15,9 @@ const title = 'Skills & Technologies'
       <div className={styles.skills}>
         {skills.map((skill) => (
             <Tag 
+            icon={skill.icon}
+            size={28}
+            color={skill.color}
             key={skill.id}
             label={skill.name}/>
         ))}
