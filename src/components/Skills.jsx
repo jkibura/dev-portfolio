@@ -10,7 +10,7 @@ const accent = 'TOOLKIT'
 const title = 'Skills & Technologies'
 
   return (
-    <section className='container'>
+    <section id="skills" className='container'>
       <SectionHeader accent={accent} title={title}/>
       <div className={styles.skills}>
         {skills.map((skill) => (

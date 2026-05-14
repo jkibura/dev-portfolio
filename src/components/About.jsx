@@ -10,7 +10,7 @@ const About = () => {
   const title = 'About Me'
 
   return (
-    <section className='container'>
+    <section id="about" className={`container ${styles.aboutSection}`}>
       <SectionHeader accent={accent} title={title}/>
 
       <div className={styles.about}>

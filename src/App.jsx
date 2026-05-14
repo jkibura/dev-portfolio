@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      
+      <main>
         <Hero />
         <About />
         <Skills />
@@ -20,7 +20,7 @@ const App = () => {
         <Contact />
         <Footer />
         <ScrollToTop />
-      
+      </main>
     </>
   )
 }

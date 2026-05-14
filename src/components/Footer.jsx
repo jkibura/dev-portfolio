@@ -4,7 +4,7 @@ import styles from '../styles/Footer.module.css'
 
 
 const Footer = () => {
-  const year = new Date().getDate
+  const year = new Date().getFullYear()
 
   return (
     <div className={styles.footer}>

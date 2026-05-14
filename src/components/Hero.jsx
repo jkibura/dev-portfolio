@@ -2,11 +2,9 @@ import React from 'react'
 import '../styles/globals.css'
 import styles from '../styles/Hero.module.css'
 
-import Button from './ui/Button'
-
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section id="top" className={styles.hero}>
 
       <div className='container' id={styles.heroContainer}>
 
@@ -19,14 +17,18 @@ const Hero = () => {
           <p className='hero-subtitle'>Frontend Engineer | React | TypeScript</p>
           
           <div className={styles.buttons}>
-            <Button
-              type='button'
-              >View Projects
-            </Button>
-            <Button
-              type='button'
-              >View Projects
-            </Button>
+            <a href="#projects" className="button">
+              View Projects
+            </a>
+            <a href="#contact" className={`button ${styles.ctaHire}`}>
+              <span className={styles.ctaHireInner}>
+                <span className={styles.ctaHireLabel}>Hire me</span>
+                <span className={styles.ctaHireHint}>
+                  Share your role, timeline, or idea — I will reply thoughtfully.
+                </span>
+              </span>
+              <span className={styles.ctaHireArrow} aria-hidden>→</span>
+            </a>
           </div>
         </div>
 

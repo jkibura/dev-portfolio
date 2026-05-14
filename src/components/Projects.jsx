@@ -11,9 +11,9 @@ const accent = 'MY WORK'
 const title = 'Featured Projects'
 
   return (
-    <section className='container'>
+    <section id="projects" className='container'>
       <SectionHeader accent={accent} title={title}/>
-      <p className='body-text'>A selection of things I've built</p>
+      <p className={`body-text ${styles.lead}`}>A selection of things I've built</p>
 
       <div className={styles.projects}>
         {projects.map((project) => (

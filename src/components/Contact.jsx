@@ -18,8 +18,8 @@ function handleSubmit(e) {
 }
 
   return (
-    <section className='container'>
-      <SectionHeader accent={accent} title={title}/> change to eyebrow?
+    <section id="contact" className='container'>
+      <SectionHeader accent={accent} title={title}/>
 
       <div className={styles.contact}>
 
@@ -82,13 +82,18 @@ function handleSubmit(e) {
         </div>
 
         <div className={styles.infoSide}>
-          <h3 className={styles.tagline}>
-            Let's build something great together.
-          </h3>
+          <div className={styles.trustBlock}>
+            <h3 className={styles.tagline}>
+              Tell me what you are building — I will help you ship it.
+            </h3>
 
-          <p className={styles.body}>
-            Whether you have a project in mind, a role to fill, or just want to connect - my inbox is always open.
-          </p>
+            <p className={styles.body}>
+              Whether you need a frontend engineer for a product team, a contractor for a
+              focused build, or a second pair of eyes on something tricky, you are in the
+              right place. Drop a line with your timeline, stack, or job spec; I read every
+              message and answer thoughtfully, usually within a day.
+            </p>
+          </div>
 
           <div className={styles.socials}>
             <a 
@@ -96,6 +101,7 @@ function handleSubmit(e) {
               target='_blank'
               rel='noopener noreferrer'
               className={styles.socialRow}
+              aria-label="GitHub profile (opens in new tab)"
             >
               <div className={styles.socialIcon}>
                 <FaGithub size={16}/>
@@ -107,10 +113,11 @@ function handleSubmit(e) {
             </a>
 
             <a 
-              href=""
+              href="https://www.linkedin.com/in/jk"
               target='_blank'
               rel='noopener noreferrer'
               className={styles.socialRow}
+              aria-label="LinkedIn profile (opens in new tab)"
             >
               <div className={styles.socialIcon}>
                 <FaLinkedin size={16}/>
@@ -123,9 +130,8 @@ function handleSubmit(e) {
 
             <a 
               href="mailto:jkibura001@gmail.com"
-              target='_blank'
-              rel='noopener noreferrer'
               className={styles.socialRow}
+              aria-label="Send email to jkibura001@gmail.com"
             >
               <div className={styles.socialIcon}>
                 <FiMail size={16}/>

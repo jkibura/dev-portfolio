@@ -15,13 +15,13 @@ const ProjectCard = ({ image, name, description, tags, link}) => {
           <h3 className={styles.title}>
             {name}
           </h3>
-          <p className={styles.description} id='body-text'>
+          <p className={styles.description}>
             {description}
           </p>
 
           <div className={styles.tags}>
             {tags.map((tag) => (
-              <span className={styles.tag}>{tag}</span>
+              <span className={styles.cardTag} key={tag}>{tag}</span>
             ))}
           </div>
         </div>
