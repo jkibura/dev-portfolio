@@ -9,18 +9,22 @@ const Skills = () => {
 const accent = 'TOOLKIT'
 const title = 'Skills & Technologies'
 
+const doubledSkills = [...skills, ...skills]
+
   return (
     <section id="skills" className='container'>
       <SectionHeader accent={accent} title={title}/>
-      <div className={styles.skills}>
-        {skills.map((skill) => (
-            <Tag 
-            icon={skill.icon}
-            size={28}
-            color={skill.color}
-            key={skill.id}
-            label={skill.name}/>
-        ))}
+      <div className={styles.marqueWrapper}>
+        <div className={styles.skills}>
+          {doubledSkills.map((skill, index) => (
+              <Tag 
+              key={index}
+              icon={skill.icon}
+              size={28}
+              color={skill.color}
+              label={skill.name}/>
+          ))}
+        </div>
       </div>
     </section>
   )

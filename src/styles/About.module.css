@@ -86,7 +86,7 @@
     }
 }
 
-.skills {
+/* .skills {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,4 +95,31 @@
     gap: var(--space-5);
     width: 100%;
     min-width: 0;
+} */
+
+.marqueWrapper {
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.skills {
+    display: flex;
+    width: max-content;
+    gap: var(--space-4);
+    animation: scroll 15s linear infinite;
+}
+
+.skills:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - var(--space-4)));
+    }
 }
