@@ -23,9 +23,9 @@ const Hero = () => {
             <a href="#contact" className={`button ${styles.ctaHire}`}>
               <span className={styles.ctaHireInner}>
                 <span className={styles.ctaHireLabel}>Hire me</span>
-                <span className={styles.ctaHireHint}>
+                {/* <span className={styles.ctaHireHint}>
                   Share your role, timeline, or idea — I will reply thoughtfully.
-                </span>
+                </span> */}
               </span>
               <span className={styles.ctaHireArrow} aria-hidden>→</span>
             </a>
