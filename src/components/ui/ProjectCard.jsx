@@ -8,7 +8,7 @@ const ProjectCard = ({ image, name, description, tags, link}) => {
        rel='noopener noreferrer'>
       <div className={styles.card}>
         <div className={styles.imageWrapper}>
-          <img className={styles.image} src={image} alt={name} />
+          <img className={styles.image} src={image} alt={name} loading="lazy" />
         </div>
 
         <div className={styles.body}>

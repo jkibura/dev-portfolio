@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import '../styles/globals.css'
 import styles from '../styles/Contact.module.css'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -10,11 +11,25 @@ import Button from './ui/Button'
 const Contact = () => {
 const accent = 'GET IN TOUCH'
 const title = 'Contact'
+const form = useRef()
 
 function handleSubmit(e) {
   e.preventDefault()
-  //EmailJS code here
-  console.log('submitted')
+
+  emailjs
+    .sendForm(
+      'YOUR_SERVICE_ID',
+      'YOUR_TEMPLATE_ID',
+      form.current,
+      'YOUR_PUBLIC_KEY'
+    )
+    .then(() => {
+      alert('Message sent successfully!')
+      form.current.reset()
+    })
+    .catch(() => {
+      alert('Something went wrong. Please try again.')
+    })
 }
 
   return (
@@ -24,7 +39,7 @@ function handleSubmit(e) {
       <div className={styles.contact}>
 
         <div className={styles.formSide}>
-          <form className={styles.form} onSubmit={handleSubmit}>
+          <form ref={form} className={styles.form} onSubmit={handleSubmit}>
 
             <div className={styles.row}>
 
@@ -32,6 +47,7 @@ function handleSubmit(e) {
                 <label className={styles.label} htmlFor="name">Name</label>
                 <input 
                   id='name'
+                  name='from_name'
                   type="text"
                   className={styles.input}
                   placeholder="Your name /Organization" 
@@ -43,6 +59,7 @@ function handleSubmit(e) {
                 <label className={styles.label} htmlFor="email">Email</label>
                 <input 
                   id='email'
+                  name='from_email'
                   type="email"
                   className={styles.input}
                   placeholder="you@email.com" 
@@ -56,6 +73,7 @@ function handleSubmit(e) {
                 <label className={styles.label} htmlFor="subject">Subject</label>
                 <input 
                   id='subject'
+                  name='subject'
                   type="text"
                   className={styles.input}
                   placeholder="What's this about?" 
@@ -66,6 +84,7 @@ function handleSubmit(e) {
                 <label className={styles.label} htmlFor="message">Message</label>
                 <textarea 
                   id='message'
+                  name='message'
                   type="text"
                   className={styles.textarea}
                   placeholder="Tell me about your project..." 
