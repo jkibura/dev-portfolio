@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/globals.css'
 import styles from '../styles/About.module.css'
-import profileImage from '../assets/images/about.png'
+import profileImage from '../assets/images/about.webp'
 
 import SectionHeader from './ui/SectionHeader'
 
