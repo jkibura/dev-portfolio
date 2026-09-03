@@ -1,8 +1,8 @@
 // import aboutImage from '../assets/images/about.png'
 // import projectImage from '../assets/images/image.png'
-import sarahPsyd from '../assets/images/sarahpsychologist.webp'
-import haborCleaning from '../assets/images/haborcitycleaning.webp'
-import scriptIQ from '../assets/images/script-iq.webp'
+import sarahPsyd from '/images/sarahpsychologist.webp'
+import haborCleaning from '/images/haborcitycleaning.webp'
+import scriptIQ from '/images/script-iq.webp'
 
 const projects = [
     {id: 1, name: 'Clinical Psychologist Website', description: 'A professional brand website for a Clinical Psychologist.', image: sarahPsyd, link: 'https://psyd-two.vercel.app/', tags: ['HTML', 'CSS', 'Javascript']},
